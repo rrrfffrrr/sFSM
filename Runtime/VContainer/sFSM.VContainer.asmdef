@@ -1,0 +1,17 @@
+{
+    "name": "sFSM.VContainer",
+    "rootNamespace": "ProfTroller.sFSM.VContainer",
+    "references": [
+        "VContainer",
+        "sFSM"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": true
+}
