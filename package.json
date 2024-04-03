@@ -10,9 +10,17 @@
     "email": "rrrfffrrr@naver.com",
     "url": ""
   },
+  "licensesUrl": "https://github.com/rrrfffrrr/sFSM/blob/release/LICENSE.md",
   "repository": {
     "url": "https://github.com/rrrfffrrr/sFSM.git",
     "type": "git",
     "revision": ""
-  }
+  },
+  "samples": [
+    {
+      "displayName": "VContainer",
+      "description": "VContainer integration",
+      "path": "Samples~/VContainer"
+    }
+  ]
 }
