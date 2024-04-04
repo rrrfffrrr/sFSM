@@ -2,7 +2,7 @@
   "name": "prof_troller.sfsm",
   "displayName": "sFSM",
   "description": "Simple finite state machine",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "unity": "2022.3",
   "documentationUrl": "https://github.com/rrrfffrrr/sFSM",
   "author": {
