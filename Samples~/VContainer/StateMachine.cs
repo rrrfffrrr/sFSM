@@ -1,19 +1,20 @@
 using VContainer;
+using VContainer.Unity;
 
 namespace ProfTroller.sFSM.VContainer
 {
     public class StateMachine<TState> : ManagedStateMachine<TState> where TState : BaseState<TState>
     {
-        private IScopedObjectResolver scope;
+        private LifetimeScope scope;
 
         [Inject]
-        public void InjectDependency(Container container)
+        public void InjectDependency(LifetimeScope parent)
         {
             if (scope != null)
             {
                 return;
             }
-            scope = container.CreateScope(BuildDependency);
+            scope = parent.CreateChild(BuildDependency);
             void BuildDependency(IContainerBuilder builder)
             {
                 builder.RegisterInstance(this).As<StateMachine<TState>>();
@@ -23,7 +24,7 @@ namespace ProfTroller.sFSM.VContainer
         protected override T CreateState<T>()
         {
             var state = base.CreateState<T>();
-            scope.Inject(state);
+            scope.Container.Inject(state);
             return state;
         }
 
