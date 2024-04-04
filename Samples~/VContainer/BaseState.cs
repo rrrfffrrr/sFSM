@@ -8,7 +8,7 @@ namespace ProfTroller.sFSM.VContainer
         private StateMachine<TState> stateMachine;
         public void ChangeState<T>() where T : TState => stateMachine.ChangeState<T>();
 
-        public abstract void Dispose();
+        public virtual void Dispose() {}
         public abstract void Enter();
         public abstract void Exit();
     }
