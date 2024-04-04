@@ -21,6 +21,11 @@
       "displayName": "VContainer",
       "description": "VContainer integration",
       "path": "Samples~/VContainer"
+    },
+    {
+      "displayName": "Soldier example",
+      "description": "Soldier example",
+      "path": "Samples~/Soldier"
     }
   ]
 }
